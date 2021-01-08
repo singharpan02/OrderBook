@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block home %}
+<li class="nav-item">
+  <a class="nav-link" aria-current="page" href="/"> Home </a>
+</li>
+{% endblock home %}
+
+{% block shares %}
+<li class="nav-item">
+  <a class="nav-link" aria-current="page" href="/shares"> Shares </a>
+</li>
+{% endblock shares %}
+
+{% block about %}
+<li class="nav-item">
+  <a class="nav-link" href="/about"> About </a>
+</li>
+{% endblock about %}
+
+{% block contact %}
+<li class="nav-item">
+  <a class="nav-link active" href="/contact"> Contact </a>
+</li>
+{% endblock contact %}
+
+{% block content %}
+<div class="container" style="margin-top: 50px;">
+  <h2 class="text-dark fw-bold mt-4"> There are two ways to contact us: </h2>
+  <ol class="mt-4">
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col">
+        <li class="text-dark fs-3"> Email Our Team </li>
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-4" style="margin-top: 20px;">
+            <a href="mailto:email@orderbook.com">
+              <button class="btn btn-outline-primary" style="width: 400px; height: 50px;">
+                email@orderbook.com
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col" style="margin-top: 20px;">
+        <li class="text-dark fs-3"> Open an issue on GitHub </li>
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-4" style="margin-top: 20px;">
+            <a href="https://github.com/join" target="_blank">
+              <button class="btn btn-outline-primary" style="width: 400px; height: 50px;">
+                Go to GitHub issues page
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ol>
+</div>
+{% endblock content %}

@@ -1,0 +1,29 @@
+{% extends 'marketorder.html' %}
+
+{% block order %}
+  <table class="table table-dark table-striped table-hover text-center">
+    <thead>
+      <tr>
+        <th></th>
+        <th> Price </th>
+        <th> Ask Size </th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for order in askorders %}
+        <tr>
+          <td></td>
+          <td> {{ order.price }} </td>
+          <td> {{ order.size }} </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+    <thead>
+      <tr>
+        <th> Bid Size </th>
+        <th> Price </th>
+        <th></th>
+      </tr>
+    </thead>
+  </table>
+{% endblock order %}

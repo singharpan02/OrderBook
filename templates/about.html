@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block home %}
+<li class="nav-item">
+  <a class="nav-link" aria-current="page" href="/"> Home </a>
+</li>
+{% endblock home %}
+
+{% block shares %}
+<li class="nav-item">
+  <a class="nav-link" aria-current="page" href="/shares"> Shares </a>
+</li>
+{% endblock shares %}
+
+{% block about %}
+<li class="nav-item">
+  <a class="nav-link active" href="/about"> About </a>
+</li>
+{% endblock about %}
+
+{% block contact %}
+<li class="nav-item">
+  <a class="nav-link" href="/contact"> Contact </a>
+</li>
+{% endblock contact %}
+
+{% block content %}
+<div class="container mt-2">
+  <h1 class="text text-center text-dark"> This website is developed by Arpan Singh Pundhir </h1>
+  <pre class="text-center mt-2">
+    <strong> A platform to buy or sell stocks or shares. </strong>
+    We offer you the best and easiest platform to buy and sell stocks at the best prices.
+    You can also buy or sell multiple shares at a time.
+  </pre>
+  <h4 class="text fw-bold mt-2"> You can purchase shares using the following methods: </h4>
+  <ul>
+    <li class="ms-3 mt-1"> Market Order </li>
+    <li class="ms-3 mt-1"> Limit Order </li>
+  </ul>
+</div>
+{% endblock content %}

@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+  
+{% block home %}
+<li class="nav-item">
+  <a class="nav-link" aria-current="page" href="/"> Home </a>
+</li>
+{% endblock home %}
+
+{% block shares %}
+<li class="nav-item">
+  <a class="nav-link" aria-current="page" href="/shares"> Shares </a>
+</li>
+{% endblock shares %}
+
+{% block about %}
+<li class="nav-item">
+  <a class="nav-link" href="/about"> About </a>
+</li>
+{% endblock about %}
+
+{% block contact %}
+<li class="nav-item">
+  <a class="nav-link" href="/contact"> Contact </a>
+</li>
+{% endblock contact %}
+
+{% block content %}
+  <div class="container"
+       style="margin-top: 30px; margin-top: 20px; display: grid; place-content: center center;">
+    <form action="">
+      <label class="text fw-bold" for="feedback"> Enter your feedback </label> <br>
+      <textarea class="mt-2" name="feedback" cols="50" rows="10"></textarea> <br>
+      <button class="btn btn-success btn-block float-end" type="submit"
+              onclick="onClickFeedback()" style="margin-bottom: 20px;"> Submit </button>
+    </form>
+  </div>
+{% endblock content %}
